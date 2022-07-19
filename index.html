@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="score">
+            <p id="user-score" style="font-size: 30px; margin-top: 12px; font-family: 'IBM Plex Sans', sans-serif;"></p>
+        </div>
+        <div class="input">
+            <div class="input-box">
+                <p id="words" style="padding-left: 5px; font-family: 'IBM Plex Sans', sans-serif; color: rgb(117, 121, 124);"></p>
+            </div>
+            <div class="input-button">
+                <button onClick="check()">Check</button>
+            </div>
+        </div>
+        <div class="note">
+            <span style="font-size: 20px; margin: 15px 5px 0px 0px; color: red">Note:Your word should be greater than 2
+                letters & less than 14 letters.</span>
+        </div>
+        <div class="alphabets">
+            <div class="line1">
+                <div class="l1-box1"><span id="box1" onClick="display('1')">a</span></div>
+                <div class="l1-box2"><span id="box2" onClick="display('2')">b</span></div>
+                <div class="l1-box3"><span id="box3" onClick="display('3')">c</span></div>
+                <div class="l1-box4"><span id="box4" onClick="display('4')">d</span></div>
+                <div class="l1-box5"><span id="box5" onClick="display('5')">e</span></div>
+                <div class="l1-box6"><span id="box6" onClick="display('6')">f</span></div>
+                <div class="l1-box7"><span id="box7" onClick="display('7')">g</span></div>
+            </div>
+            <div class="line2">
+                <div class="l2-box1"><span id="box8" onClick="display('8')">h</span></div>
+                <div class="l2-box2"><span id="box9" onClick="display('9')">i</span></div>
+                <div class="l2-box3"><span id="box10" onClick="display('10')">j</span></div>
+                <div class="l2-box4"><span id="box11" onClick="display('11')">k</span></div>
+                <div class="l2-box5"><span id="box12" onClick="display('12')">l</span></div>
+                <div class="l2-box6"><span id="box13" onClick="display('13')">m</span></div>
+                <div class="l2-box7"><span id="box14" onClick="display('14')">n</span></div>
+            </div>
+            <div class="line3">
+                <div class="l3-box1"><span id="box15" onClick="display('15')">o</span></div>
+                <div class="l3-box2"><span id="box16" onClick="display('16')">p</span></div>
+                <div class="l3-box3"><span id="box17" onClick="display('17')">q</span></div>
+                <div class="l3-box4"><span id="box18" onClick="display('18')">r</span></div>
+                <div class="l3-box5"><span id="box19" onClick="display('19')">s</span></div>
+                <div class="l3-box6"><span id="box20" onClick="display('20')">t</span></div>
+                <div class="l3-box7"><span id="box21" onClick="display('21')">u</span></div>
+            </div>
+            <div class="line4">
+                <div class="l4-box1"><span id="box22" onClick="display('22')">v</span></div>
+                <div class="l4-box2"><span id="box23" onClick="display('23')">w</span></div>
+                <div class="l4-box3"><span id="box24" onClick="display('24')">x</span></div>
+                <div class="l4-box4"><span id="box25" onClick="display('25')">y</span></div>
+                <div class="l4-box5"><span id="box26" onClick="display('26')">z</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

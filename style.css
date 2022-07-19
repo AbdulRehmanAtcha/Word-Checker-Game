@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: burlywood;
+
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.input{
+    height: 50px;
+    width: 520px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+.alphabets{
+    height: 300px;
+    width: 465px;
+    /* border: 1px solid black; */
+}
+.line1,.line2,.line3{
+    display: flex;
+}
+.line1 div,.line2 div,.line3 div{
+    text-align: center;
+    height: 40px;
+    width: 60px;
+    border: 1px solid rgb(48, 48, 49);
+    margin: 4px 3px 0px 3px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+}
+.line4{
+    display: flex;
+    flex-direction: row;
+}
+.line4 div{
+    position: relative;
+    margin: 4px 19px 0px 1px;
+    height: 40px;
+    width: 60px;
+    border: 1px solid rgb(48, 48, 49);
+    border-radius: 8px;
+    left: 42px;
+    background-color: aliceblue;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+}
+span{
+    bottom: 9px;
+    position: relative;
+    font-size: 33px;
+    font-weight: bold;
+}
+.input .input-box{
+    width: 70%;
+    height: 50px;
+    background-color: rgba(240, 248, 255, 0.747);
+    margin-left: 35px;
+    border-radius: 8px;
+    font-size: 35px;
+}
+.input .input-button button{
+    border: transparent;
+    height: 49px;
+    width: 89px;
+    border-radius: 8px;
+    /* outline: none; */
+    margin-left: 2px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.line4 span{
+    position: relative;
+    margin-left: 18px;
+    /* margin-bottom: 33px; */
+    bottom: 6px;
+}
+.score{
+    height: 65px;
+    width: 240px;
+    /* border: 1px solid green; */
+    background-color: rgba(133, 135, 136, 0.562);
+    color: aliceblue;
+}
+
+@media screen and (min-width:370px) and (max-width:750px){
+    .input .input-box{
+        width: 60%;
+        height: 50px;
+        background-color: rgba(240, 248, 255, 0.747);
+        margin-left: 73px;
+        border-radius: 8px;
+        font-size: 35px;
+    }
+    .input .input-button button{
+        border: transparent;
+        height: 49px;
+        width: 59px;
+        border-radius: 8px;
+        /* outline: none; */
+        margin-left: 2px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .line1 div,.line2 div,.line3 div{
+        margin-left: 8px;
+        text-align: center;
+        height: 40px;
+        width: 41px;
+        border: 1px solid rgb(48, 48, 49);
+        border-radius: 8px;
+        background-color: aliceblue;
+        cursor: pointer;
+        position: relative;
+        left: 47px;
+        font-family: 'Kanit', sans-serif;
+    }
+    .line4 div{
+        position: relative;
+        margin: 4px 19px 0px 1px;
+        height: 40px;
+        width: 41px;
+        border: 1px solid rgb(48, 48, 49);
+        border-radius: 8px;
+        left: 86px;
+        background-color: aliceblue;
+        cursor: pointer;
+        font-family: 'Kanit', sans-serif;
+    }
+    .line4 span{
+        position: relative;
+        margin-left: 18px;
+        /* margin-bottom: 33px; */
+        bottom: 6px;
+    }
+    .container{
+        position: relative;
+        left: 50px;
+        top: 40px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .input .input-box{
+        width: 227px;
+        height: 50px;
+        background-color: rgba(240, 248, 255, 0.747);
+        margin-left: 80px;
+        border-radius: 8px;
+        font-size: 20px;
+        position: relative;
+        left: 44px;    
+    }
+    .input .input-button button{
+        border: transparent;
+        height: 49px;
+        width: 48px;
+        border-radius: 8px;
+        /* outline: none; */
+        margin-left: 45px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .line1 div,.line2 div,.line3 div{
+        text-align: center;
+        height: 40px;
+        width: 34px;
+        border: 1px solid rgb(48, 48, 49);
+        border-radius: 8px;
+        background-color: aliceblue;
+        cursor: pointer;
+        position: relative;
+        left: 93px;
+        font-family: 'Kanit', sans-serif;
+    }
+    .line4 div{
+        position: relative;
+        /* margin: 4px 19px 0px 1px; */
+        height: 40px;
+        width: 35px;
+        border: 1px solid rgb(48, 48, 49);
+        border-radius: 8px;
+        left: 101px;
+        background-color: aliceblue;
+        cursor: pointer;
+        font-family: 'Kanit', sans-serif;
+    }
+    .line4 span{
+        position: relative;
+        margin-left: 18px;
+        /* margin-bottom: 33px; */
+        bottom: 6px;
+    }
+    .container{
+        position: relative;
+        left: 1px;
+    }
+}
+
+
+@media screen and (min-width:751px) and (max-width:1050px){
+    .alphabets{
+        height: 300px;
+        width: 765px;
+        /* border: 1px solid black; */
+    }
+    .input{
+        height: 50px;
+        width: 760px;
+        /* border: 1px solid red; */
+        display: flex;
+    }
+    .input .input-box{
+        width: 60%;
+        height: 70px;
+        background-color: rgba(240, 248, 255, 0.747);
+        margin-left: 73px;
+        border-radius: 8px;
+        font-size: 45px;
+    }
+    .input .input-button button{
+        border: transparent;
+        height: 70px;
+        width: 119px;
+        border-radius: 8px;
+        /* outline: none; */
+        margin-left: 2px;
+        cursor: pointer;
+        font-size: 38px;
+        font-weight: bold;
+    }
+    .line1 div,.line2 div,.line3 div{
+        margin-left: 8px;
+        text-align: center;
+        height: 61px;
+        width: 69px;
+        border: 1px solid rgb(48, 48, 49);
+        border-radius: 8px;
+        background-color: aliceblue;
+        cursor: pointer;
+        position: relative;
+        left: 77px;
+        top: 20px;
+        font-family: 'Kanit', sans-serif;
+    }
+    .line4 div{
+        position: relative;
+        margin: 4px 19px 0px 1px;
+        height: 61px;
+        width: 69px;
+        border: 1px solid rgb(48, 48, 49);
+        border-radius: 8px;
+        left: 151px;
+        background-color: aliceblue;
+        cursor: pointer;
+        top: 21px;
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    .line4 span{
+        position: relative;
+        margin-left: 21px;
+        /* margin-bottom: 33px; */
+        bottom: 1px;
+    }
+    span{
+        bottom: -3px;
+        position: relative;
+        font-size: 33px;
+        font-weight: bold;
+    }
+    .container{
+        position: relative;
+        right: 0px;
+    }
+    .note{
+        /* margin-top: 25px; */
+        position: relative;
+        top: 25px;
+    }
+    
+}
+
